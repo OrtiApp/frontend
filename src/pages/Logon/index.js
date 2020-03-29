@@ -35,7 +35,7 @@ export default function Logon () {
 
                     <img src={logoImg} alt="logo" height={225}/>
                     <form onSubmit={handleLogon}>
-                        <h1>Faça seu Logon</h1>
+                        <h1>Acesse sua conta</h1>
 
                         <input
                             placeholder="Seu CPF"

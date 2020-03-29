@@ -43,7 +43,7 @@ export default function  NewProduct () {
                 <section>
                     <img src={logoImg} alt="logo" height={150}/>
                     <h1>Cadastrar novo Produto</h1>
-                    <p>Descreva o produto detalhadamente para encontrar um herói para resolver isso.</p>
+                    <p>Descreva o produto detalhadamente para que os compradores possam saber o que estão comprando.</p>
                     
                     <Link className="back-link" to="/profile">
                         <FiArrowLeft size={16} color="#207740"/>
