@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { FiLogIn } from 'react-icons/fi'
+import { FiLogIn, FiGithub } from 'react-icons/fi'
 import { Link , useHistory} from 'react-router-dom'
 
 import './style.css';
 import farmerImg from '../../assets/farmer.png';
+import logoImg from '../../assets/logo.png';
 
 // import api from '../../services/api';
 
@@ -32,6 +33,7 @@ export default function Logon () {
             <div className="content">
                 <section className="form">
 
+                    <img src={logoImg} alt="logo" height={225}/>
                     <form onSubmit={handleLogon}>
                         <h1>Faça seu Logon</h1>
 
@@ -48,14 +50,19 @@ export default function Logon () {
                         <button className="button" type="submit">Entrar</button>
 
                         < Link className = "back-link" to = "/register" >
-                            <FiLogIn size={16} color="#749e4c"/>
+                            <FiLogIn size={14} color="#207740"/>
                             Não tenho cadastro.
                         </Link>
                     </form>
                 </section>
-                
-                <img src={farmerImg} alt="farmer"/>
+                <div className="aside">
+                    <img src={farmerImg} height={650} alt="farmer"/>
+                    <a href = "https://br.freepik.com/fotos-vetores-gratis/projeto" > Projeto vetor criado por freepik</a>
+                </div>
             </div>
+            <a href="https://github.com/OrtiApp" className="footer">
+                <FiGithub size={50} className="git"/>
+            </a>
         </div>
     );
 }

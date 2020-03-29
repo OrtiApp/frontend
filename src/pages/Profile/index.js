@@ -1,6 +1,7 @@
 import React , { useEffect , useState} from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiTrash2 } from 'react-icons/fi';
+import logoImg from '../../assets/logo.png';
 
 // import api from '../../services/api';
 
@@ -47,6 +48,7 @@ export default function Profile () {
     return (
         <div className="profile-container">
             <header>
+                <img src={logoImg} alt="logo" height={100}/>
                 <span>Bem vindo, Fulano</span>
 
                 <Link className="button" to="/product/new"> Cadastrar novo produto </Link>
@@ -67,7 +69,7 @@ export default function Profile () {
                     <p>{ Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format('2000') }</p>
 
                     <button type="button" onClick={() => handleDeleteProduct()}>
-                        <FiTrash2 size={20} color="#74b438" />
+                        <FiTrash2 size={20} color="#207740" />
                     </button>
                 </li>
                 <li>

@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'
 
 // import api from '../../services/api';
-
+import logoImg from '../../assets/logo.png';
 import './style.css';
 
 export default function  NewProduct () {
@@ -41,11 +41,12 @@ export default function  NewProduct () {
         <div className="new-product-container">
             <div className="content">
                 <section>
+                    <img src={logoImg} alt="logo" height={150}/>
                     <h1>Cadastrar novo Produto</h1>
                     <p>Descreva o produto detalhadamente para encontrar um herói para resolver isso.</p>
                     
                     <Link className="back-link" to="/profile">
-                        <FiArrowLeft size={16} color="#74b438"/>
+                        <FiArrowLeft size={16} color="#207740"/>
                         Voltar para produtos
                     </Link>
                 </section>

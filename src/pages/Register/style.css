@@ -25,7 +25,7 @@
 }
 
 .register-container .content section h1 {
-    margin: 64px 0px 32px;
+    margin: 0px 0px 32px;
     font-size: 32px;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .register-container .content form input {
-    margin-top: 8px;
+    margin-top: 13px;
 }
 .register-container .content form .input-group {
     display: flex;
